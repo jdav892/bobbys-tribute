@@ -24,8 +24,10 @@ html, body {
     width: 100%;
 
 }
+
 #top-tag{
     padding-bottom: 20px;
+    color: white;
 }
 
 #bg-video {
@@ -52,6 +54,7 @@ html, body {
     opacity: 0.92;
 }
 
+
 #main-img {
     border: 3px solid white;
     border-radius: 20px;
@@ -61,7 +64,7 @@ html, body {
 }
 
 #main-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -102,6 +105,8 @@ p {
     transform: translateY(50px);
 }
 
+
+
 #padder { 
     padding: 30px;
 }
@@ -137,5 +142,14 @@ p {
         margin: 0 auto;
 
     }
+    
+    .top-container {
+        border: 2px solid white;
+        background-color:  #041E42;
+        opacity: .75;
+        border-radius: 25px;
+        padding: 0 auto;
+        margin: 0 auto;
+}
 
 }
