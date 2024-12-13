@@ -5,16 +5,17 @@
     
 }
 
-body {
+html, body {
+    width: 100%;
     font-family: "Bradley Hand";
     font-style: italic;
     font-weight: 1;
-    height: 100;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 
 }
 
@@ -41,15 +42,13 @@ body {
     padding-top: 25px; 
     z-index: 1;
     color: white;
-    animation: fadeIn 2s;
+    animation: fadeIn 4s;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#bottom-tag {
-    text-decoration: underline;
+    width: 100%;
+    text-align: center;
 }
 
 #main-img {
@@ -93,12 +92,19 @@ h1 {
     100%{opacity: 1;}
 }
 
-@media (max-width: 420) {
-    * {
-        justify-content: center;
+@media(max-width: 450px){
+    body {
+        padding: 100px;
+        margin: 0;
     }
 
     .content {
-        align-items: center;
+        padding: 10px;
+        width: 100vw;
     }
+
+    #main-img {
+        scale: 1;
+    }
+
 }
