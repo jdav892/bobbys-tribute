@@ -39,7 +39,7 @@ html, body {
 }
 
 .content {
-    padding-top: 25px; 
+    padding-top: 25px;
     z-index: 1;
     color: white;
     animation: fadeIn 4s;
@@ -49,13 +49,20 @@ html, body {
     justify-content: center;
     width: 100%;
     text-align: center;
+    opacity: 0.92;
 }
 
 #main-img {
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 20px;
     align-items: center;
-    scale: 1.2
+    opacity: .75;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#main-img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 #title {
@@ -87,12 +94,28 @@ h1 {
     justify-content: center;
 }
 
+p {
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+#padder { 
+    padding: 30px;
+}
+
+#padder-2 {
+    padding: 30px;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100%{opacity: 1;}
 }
 
-@media(max-width: 450px){
+@media(max-width: 500px){
     body {
         padding: 100px;
         margin: 0;
@@ -104,7 +127,15 @@ h1 {
     }
 
     #main-img {
-        scale: 1;
+        transform: scale(1);
+    }
+
+    p {
+        width: auto;
+        max-width: 90vw;
+        padding: 10px;
+        margin: 0 auto;
+
     }
 
 }
