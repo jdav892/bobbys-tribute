@@ -1,10 +1,5 @@
-const video = document.getElementById("bg-video");
 const mainImg = document.getElementById("main-img");
 const passage = document.getElementById("passage")
-
-document.addEventListener("DOMContentLoaded", () => {
-    video.playbackRate = '1';
-})
 
 document.addEventListener('click', () => {
     mainImg.style.opacity = '1';

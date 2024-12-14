@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 html, body {
     width: 100%;
-    font-family: "Bradley Hand";
+    font-family: "Times New Roman";
     font-style: italic;
     font-weight: 1;
     display: flex;
@@ -16,28 +15,27 @@ html, body {
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-
+    background-image: url("/images/family.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.vid-container {
+#bg-div {
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    z-index: -1
+}
+
+.bg-container {
     position: relative;
     width: 100%;
-
 }
 
 #top-tag{
     padding-bottom: 20px;
     color: white;
-}
-
-#bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
 }
 
 .content {
@@ -51,7 +49,6 @@ html, body {
     justify-content: center;
     width: 100%;
     text-align: center;
-    opacity: 0.92;
 }
 
 
@@ -105,7 +102,23 @@ p {
     transform: translateY(50px);
 }
 
+#heading-img-div {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
 
+#heading-img-div img {
+    flex: 1;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+#heading-img-div a {
+    padding: 15px;
+}
 
 #padder { 
     padding: 30px;
@@ -122,7 +135,6 @@ p {
 
 @media(max-width: 500px){
     body {
-        padding: 100px;
         margin: 0;
     }
 
@@ -132,7 +144,7 @@ p {
     }
 
     #main-img {
-        transform: scale(1);
+        transform: scale(.9);
     }
 
     p {
@@ -142,14 +154,19 @@ p {
         margin: 0 auto;
 
     }
-    
-    .top-container {
-        border: 2px solid white;
-        background-color:  #041E42;
-        opacity: .75;
-        border-radius: 25px;
-        padding: 0 auto;
-        margin: 0 auto;
-}
+
+    #heading-img-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #heading-img-div {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+    }
 
 }
